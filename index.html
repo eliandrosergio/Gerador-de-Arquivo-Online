@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gerador de Arquivo - by Blazer Stone</title>
+</head>
+<body>
+    <header id="cabeca">
+        <h1>Gerador de Arquivo</h1>
+    </header>
+
+    <main id="corpo">
+        <div id="informacaoArquivo">
+            <div class="divInformacaoArquivo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome do Arquivo">
+            </div>
+            <div class="divInformacaoArquivo">
+                <label for="extensao">Extensão</label>
+                <input type="text" name="extensao" id="extensao" placeholder="Digite a extensão do Arquivo">
+            </div>
+        </div>
+        <div id="divTexto">
+            <label for="texto">Texto</label>
+            <textarea name="texto" id="texto" cols="40" rows="20" placeholder="Digite aqui o texto do Arquivo"></textarea>
+        </div>
+        <div id="divButton">
+            <button id="gerarArquivo">Gerar o Arquivo</button>
+        </div>
+    </main>
+
+    <footer id="bottom">
+        <p>&copy; JS Puro - by Blazer Stone</p>
+    </footer>
+    
+    <script src="./js/FileSaver.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

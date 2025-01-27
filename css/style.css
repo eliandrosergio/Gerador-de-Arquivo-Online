@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Avenir", monospace;
+}
+
+/* Init */ 
+
+:root {
+    --clr-white: #fff;
+    --bg-dark: #e0e5ec;
+    --cor-blue: #0077ff;
+    --bg-panel-dark: #b1b1b1;
+    --cor-blue-dark: #2e74ff;
+    --clr-transparent: rgba(0, 0, 0, 0);
+    --clr-dark-translucid: rgba(0, 0, 0, 0.8);
+}
+
+::placeholder {
+    color: var(--clr-dark-translucid);
+}
+
+/* Normal */
+
+body {
+    color: var(--cor-blue);
+    background-color: var(--bg-dark);
+}
+
+/* ID */
+
+#cabeca {
+    margin: 14px;
+    text-align: center;
+}
+
+#bottom {
+    margin: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+#bottom p {
+    font-size: 28px;
+    font-style: italic;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-fill-color: var(--clr-transparent);
+}
+
+#informacaoArquivo {
+    display: flex;
+    margin: 14px auto;
+    flex-direction: row;
+}
+
+#divTexto {
+    text-align: center;
+    width: 98%;
+    margin: 0px auto;
+}
+
+#divTexto label {
+    margin: 14px;
+    font-size: 20px;
+}
+
+#divTexto textarea {
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 10px;
+    margin: 2px 0px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 14px;
+    background-color: var(--bg-panel-dark);
+    border: 2px solid var(--clr-dark-translucid);
+}
+
+#divButton {
+    margin: 4px auto;
+    text-align: center;
+}
+
+#gerarArquivo {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    color: var(--clr-white);
+    border: 2px solid var(--clr-dark-translucid);
+    background: var(--cor-blue-dark);
+}
+
+/* Class */
+
+.divInformacaoArquivo {
+    width: 47%;
+    margin: 0px auto;
+}
+
+.divInformacaoArquivo label {
+    margin: 14px;
+    font-size: 20px;
+}
+
+.divInformacaoArquivo input {
+    width: 100%;
+    border: none;
+    height: auto;
+    margin: 2px 0px;
+    font-size: 18px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: var(--bg-panel-dark);
+    border: 2px solid var(--clr-dark-translucid);
+}
